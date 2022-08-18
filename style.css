@@ -1,5 +1,5 @@
 .mainpage {
-  background-image: url(./Frame/Frame4.svg), url(./Frame/Frame3.svg), url(./Frame/Frame2.svg), url(./Frame/Frame1.svg), url(./Frame/Group35.svg), url(./Frame/Group36.svg), url(./Frame/Group37.svg), url(./Frame/Group38.svg);
+  background-image: url(Frame/Frame4.svg), url(Frame/Frame3.svg), url(Frame/Frame2.svg), url(Frame/Frame1.svg), url(/home/david/Microverse/portfolio/Frame/Group35.svg), url(Frame/Group36.svg), url(Frame/Group37.svg), url(Frame/Group38.svg);
   background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
   background-repeat: no-repeat;
   max-width: 375px;
