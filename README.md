@@ -42,6 +42,7 @@ $ npm start
 
 Contributions, issues, and feature requests are welcome!
 Feel free to check
+
 Contact me: david.tamayo1112@gmail.com
 
 ## Show your support
