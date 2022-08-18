@@ -1,4 +1,7 @@
 @media screen and (min-width: 375px) {
+
+}
+
 .mainpage {
   background-image: url(/home/david/Microverse/portfolio/Frame/Frame4.svg), url(/home/david/Microverse/portfolio/Frame/Frame3.svg), url(/home/david/Microverse/portfolio/Frame/Frame2.svg), url(/home/david/Microverse/portfolio/Frame/Frame1.svg), url(/home/david/Microverse/portfolio/Frame/Group35.svg), url(/home/david/Microverse/portfolio/Frame/Group36.svg), url(/home/david/Microverse/portfolio/Frame/Group37.svg), url(/home/david/Microverse/portfolio/Frame/Group38.svg);
   background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
@@ -17,6 +20,11 @@ button {
   border: none;
   color: #505f79;
 }
+
+a {
+  color: #505f79;
+}
+
 
 button:hover:enabled {
   background-color: #a2b4d354;
@@ -103,4 +111,3 @@ i {
   justify-content: space-between;
   background-color: #fff;
 } 
-}
