@@ -21,7 +21,6 @@ a {
   color: #505f79;
 }
 
-
 button:hover:enabled {
   background-color: #a2b4d354;
 }
@@ -106,4 +105,4 @@ i {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-} 
+}
