@@ -1,100 +1,105 @@
-div {
-  background-image: url(/home/david/Microverse/portfolio/Frame4.svg), url(/home/david/Microverse/portfolio/Frame3.svg), url(/home/david/Microverse/portfolio/Frame2.svg), url(/home/david/Microverse/portfolio/Frame1.svg), url(/home/david/Microverse/portfolio/Group35.svg), url(/home/david/Microverse/portfolio/Group36.svg), url(/home/david/Microverse/portfolio/Group37.svg), url(/home/david/Microverse/portfolio/Group38.svg);
-  background-position: -80% 50%, 100% 10%, 40% 90%, 100% 100%, 50% 50%, 100% 50%, 0% 90%, 10% 30%;
-  background-repeat: no-repeat;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-}
-
-button:hover:enabled {
-  background-color: #a2b4d354;
-}
-
-button:active:enabled {
-  color: #0cb653;
-}
-
-.welcome {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  color: #28352f;
-}
-
-.vector {
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #28352f;
-}
-
-.headline {
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-}
-
-.black {
-  color: #172b4d;
-}
-
-.green {
-  color: #36b37e;
-  margin-top: -50px;
-}
-
-.content {
-  padding-bottom: 40px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #172b4d;
-}
-
-.sociallinks > * {
-  color: #505f79;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 25px;
-}
-
-.sociallinks {
-  display: flex;
-  justify-content: center;
-}
-
-.presentation {
-  display: flex;
-  text-align: center;
-}
-
-.mainpage {
-  max-width: 375px;
-  max-height: 750px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-
-.toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
+@media screen and (min-width: 375px) {
+  .mainpage {
+    background-image: url(/home/david/Microverse/portfolio/Frame/Frame4.svg), url(/home/david/Microverse/portfolio/Frame/Frame3.svg), url(/home/david/Microverse/portfolio/Frame/Frame2.svg), url(/home/david/Microverse/portfolio/Frame/Frame1.svg), url(/home/david/Microverse/portfolio/Frame/Group35.svg), url(/home/david/Microverse/portfolio/Frame/Group36.svg), url(/home/david/Microverse/portfolio/Frame/Group37.svg), url(/home/david/Microverse/portfolio/Frame/Group38.svg);
+    background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
+    background-repeat: no-repeat;
+    max-width: 375px;
+    min-height: 850px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    color: #505f79;
+  }
+  
+  button:hover:enabled {
+    background-color: #a2b4d354;
+  }
+  
+  button:active:enabled {
+    color: #0cb653;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  i {
+    font-size: 20px;
+  }
+  
+  .welcome {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28352f;
+  }
+  
+  .vector {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #28352f;
+  }
+  
+  .headline {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .black {
+    color: #172b4d;
+  }
+  
+  .green {
+    color: #36b37e;
+    margin-top: -40px;
+    font-size: 55px;
+  }
+  
+  .content {
+    padding-bottom: 40px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #172b4d;
+    text-align: center;
+  }
+  
+  .sociallinks > * {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  
+  .sociallinks {
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+    margin-left: -20px;
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+  } 
 }
