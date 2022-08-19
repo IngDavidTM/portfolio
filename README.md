@@ -11,7 +11,7 @@
 
 ## Live Demo (if available)
 
-No
+Not available
 
 ## Getting Started
 
