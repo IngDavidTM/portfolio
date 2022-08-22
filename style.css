@@ -161,10 +161,14 @@ i {
 }
 
 .categories {
+  float: left;
+}
+/*
+.categories {
   display: flex;
   justify-content: space-around;
 }
-
+*/
 .categories li {
   padding: 7px;
   margin-left: -37px;
