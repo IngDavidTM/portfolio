@@ -301,3 +301,18 @@ i {
   line-height: 32px;
   color: #344563;
 }
+
+.contact {
+  max-width: 375px;
+  max-height: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  background-color: #0cb653;
+}
