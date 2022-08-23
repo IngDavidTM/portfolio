@@ -93,11 +93,21 @@ i {
   padding-right: 10px;
 }
 
+.sociallinks1 > * {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
 .sociallinks {
   display: flex;
   justify-content: center;
   margin-top: -110px;
   margin-left: -20px;
+}
+
+.sociallinks1 {
+  display: flex;
+  justify-content: center;
 }
 
 .toolbar {
@@ -312,7 +322,10 @@ i {
   flex-direction: column;
 }
 
-.footer {
+.social1 {
   display: flex;
-  background-color: #0cb653;
+  justify-content: center;
+  flex-direction: column;
 }
+
+
