@@ -17,6 +17,10 @@ button {
   color: #505f79;
 }
 
+form button {
+  margin-left: 110px;
+}
+
 a {
   color: #505f79;
 }
@@ -333,11 +337,12 @@ input {
   height: 48px;
 }
 
-input, textarea {
+input, 
+textarea {
   font: sans-serif;
   width: 327px;
   margin-bottom: 24px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding-left: 16px;
 }
@@ -359,10 +364,6 @@ textarea {
 
 .contact ul {
   padding-left: 0;
-}
-
-form button {
-  margin-left: 110px;
 }
 
 .contact header {
