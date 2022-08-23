@@ -94,8 +94,7 @@ i {
 }
 
 .sociallinks1 > * {
-  padding-left: 5px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .sociallinks {
@@ -313,11 +312,13 @@ i {
 }
 
 .contact {
+  background-image: url(Form/illustration-contact-form.svg);
+  background-position: 100% 67%;
+  background-repeat: no-repeat;
   max-width: 375px;
-  max-height: none;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  min-height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -338,18 +339,50 @@ input, textarea {
   margin-bottom: 24px;
   border: 1px solid #D0D9D4;
   border-radius: 4px;
+  padding-left: 16px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+textarea::placeholder {
+  font-size: 15px;
+  color: #000;
 }
 
 textarea {
   height: 114px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-form ul {
-  margin-left: -20px;
+.contact ul {
+  padding-left: 0;
 }
 
 form button {
-  margin-left: 100px;
+  margin-left: 110px;
 }
 
+.contact header {
+  width: 370px;
+  align-self: center;
+}
 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailto {
+  text-align: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  padding-bottom: 300px;
+}
