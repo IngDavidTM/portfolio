@@ -328,4 +328,28 @@ i {
   flex-direction: column;
 }
 
+input {
+  height: 48px;
+}
+
+input, textarea {
+  font: sans-serif;
+  width: 327px;
+  margin-bottom: 24px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 114px;
+}
+
+form ul {
+  margin-left: -20px;
+}
+
+form button {
+  margin-left: 100px;
+}
+
 
