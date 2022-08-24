@@ -20,6 +20,12 @@ body {
   justify-content: space-between;
 }
 
+.chevron {
+  margin-top: 150px;
+  max-width:fit-content;
+  align-self: center;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -139,6 +145,15 @@ i {
   font-size: 46px;
   line-height: 52px;
   margin-bottom: 100px;
+}
+
+.chevron img {
+  width: 40px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
 }
 
 .works {
@@ -265,6 +280,10 @@ i {
   margin-top: 15px;
   margin-bottom: 25px;
   text-decoration: none;
+}
+
+.cv:hover {
+  background-color: #a2b4d354;
 }
 
 .ilustrationme > * {
