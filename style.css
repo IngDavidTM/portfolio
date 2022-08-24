@@ -1,9 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toolbardesk {
+  display: none;
+}
 .mainpage {
   background-image: url(Frame/Frame4.svg), url(Frame/Frame3.svg), url(Frame/Frame2.svg), url(Frame/Frame1.svg), url(Frame/Group35.svg), url(Frame/Group36.svg), url(Frame/Group37.svg), url(Frame/Group38.svg);
   background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
   background-repeat: no-repeat;
   max-width: 375px;
-  min-height: 850px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -23,6 +30,7 @@ form button {
 
 a {
   color: #505f79;
+  text-decoration: none;
 }
 
 button:hover:enabled {
@@ -161,6 +169,7 @@ i {
   display: grid;
   grid-template-columns: auto 329px auto;
   row-gap: 24px;
+  column-gap: 26px;
 }
 
 .cardtitle {
@@ -386,4 +395,259 @@ textarea {
   line-height: 32px;
   color: #42526e;
   padding-bottom: 300px;
+}
+
+@media only screen and (min-width:768px) {
+  body {
+    background-image: url(desktopBackground/Frame.svg), url(desktopBackground/illustration-2-contact-form-desktop.svg), url(desktopBackground/Frame-1.svg), url(desktopBackground/illustration-about-me-2-desktop.svg), url(desktopBackground/illustration-about-me-desktop.svg);
+    background-position: 100% 98%, 30% 95%, 0% 98%, 0% 60%, 100% 60%;
+    background-repeat: no-repeat;
+  }
+  .mainpage {
+    background: none;
+    background-image: url(desktopBackground/Header-llustration-desktop.svg);
+    background-position: 40% 0%;
+    background-repeat: no-repeat;
+    max-width: max-content;
+  }
+  
+  .toolbar {
+    display: none;
+  }
+
+  .toolbardesk {
+    align-self: center;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin-bottom: 166px;
+    margin-top: 20px;
+  }
+
+  .content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #172b4d;
+    text-align: center;
+    max-width: 50%;
+    align-self: center;
+  }
+  
+  .social {
+    margin-top: -90px;
+    margin-bottom: 500px;
+  }
+
+  .works {
+    max-width: max-content;
+    min-height: auto;
+  }
+
+  .cards img {
+    width: 369px;
+  }
+
+  .cards > * {
+    max-width: 369px;
+    max-height: 476px;
+  }
+
+  .c1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .c2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .c3 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+  }
+
+  .c4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .c5 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  .c6 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: auto 372px 372px 372px auto;
+  }
+
+  .myself {
+    margin-top: 186px;
+    max-width: max-content;
+  }
+
+  .finaltext {
+    max-width: 50%;
+    align-self: center;
+  }
+
+  .ilustrationme > * {
+    max-width: 369px;
+    min-height: 332px;
+  }
+
+  .presentme {
+    background: none;
+  }
+
+  .cm1 {
+    grid-column-start: 2;
+  }
+
+  .cm2 {
+    grid-column-start: 3;
+  }
+
+  .cm3 {
+    grid-column-start: 4;
+  }
+
+  .ilustrationme {
+    display: grid;
+    grid-template-columns: auto 372px 372px 372px auto;
+    column-gap: 24px;
+  }
+
+  .contact {
+    background: none;
+    max-width: 1200px;
+    margin-top: 184px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .social1 {
+    min-width: 100%;
+
+  }
+
+  input,
+  textarea {
+    width: 668px;
+  }
+
+  form button {
+    margin-left: 0;
+  }
+
+  .contact header {
+    margin-top: -120px;
+    min-width: 40%;
+  }
+
+  .contact .headblack1 {
+    font-size: 29px;
+  }
+
+  .contact form {
+    min-width: 60%;
+  }
+
+  .mailto {
+    display: none;
+  }
+
+  .social1 {
+    margin-top: 237px;
+  }
+
+  .sociallinks1 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid #d0d9d4;
+  }
+}
+
+@media only screen and (max-width:1220px ) and (min-width:768px) {
+  .cards img {
+    width: 327px;
+  }
+
+  .c1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .c2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .c3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .c4 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  .c5 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .c6 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: auto 329px 329px auto;
+  }
+
+  .cm1 {
+    grid-column-start: 2;
+  }
+
+  .cm2 {
+    grid-column-start: 3;
+  }
+
+  .cm3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .ilustrationme {
+    display: grid;
+    grid-template-columns: auto 329px 329px auto;
+    column-gap: 24px;
+  }
+
+  .contact {
+    background: none;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact header {
+    min-width: 70%;
+  }
 }
