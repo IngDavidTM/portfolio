@@ -22,7 +22,7 @@ body {
 
 .chevron {
   margin-top: 150px;
-  max-width:fit-content;
+  max-width: fit-content;
   align-self: center;
 }
 
@@ -284,6 +284,10 @@ i {
 
 .cv:hover {
   background-color: #a2b4d354;
+}
+
+.cv:active {
+  color: #0cb653;
 }
 
 .ilustrationme > * {
