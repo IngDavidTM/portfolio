@@ -1,4 +1,4 @@
-# hello-microverse-project-
+# Portfolio
 
 > This project was made using flexbox and it was based on Template 3. The aim of the project is to build a personal portfolio site
 
