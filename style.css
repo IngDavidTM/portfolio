@@ -3,9 +3,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .toolbardesk {
   display: none;
 }
+
 .mainpage {
   background-image: url(Frame/Frame4.svg), url(Frame/Frame3.svg), url(Frame/Frame2.svg), url(Frame/Frame1.svg), url(Frame/Group35.svg), url(Frame/Group36.svg), url(Frame/Group37.svg), url(Frame/Group38.svg);
   background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
@@ -397,12 +399,13 @@ textarea {
   padding-bottom: 300px;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   body {
     background-image: url(desktopBackground/Frame.svg), url(desktopBackground/illustration-2-contact-form-desktop.svg), url(desktopBackground/Frame-1.svg), url(desktopBackground/illustration-about-me-2-desktop.svg), url(desktopBackground/illustration-about-me-desktop.svg);
     background-position: 100% 98%, 30% 95%, 0% 98%, 0% 60%, 100% 60%;
     background-repeat: no-repeat;
   }
+
   .mainpage {
     background: none;
     background-image: url(desktopBackground/Header-llustration-desktop.svg);
@@ -410,7 +413,7 @@ textarea {
     background-repeat: no-repeat;
     max-width: max-content;
   }
-  
+
   .toolbar {
     display: none;
   }
@@ -438,7 +441,7 @@ textarea {
     max-width: 50%;
     align-self: center;
   }
-  
+
   .social {
     margin-top: -90px;
     margin-bottom: 500px;
@@ -541,7 +544,7 @@ textarea {
 
   .social1 {
     min-width: 100%;
-
+    margin-top: 237px;
   }
 
   input,
@@ -570,10 +573,6 @@ textarea {
     display: none;
   }
 
-  .social1 {
-    margin-top: 237px;
-  }
-
   .sociallinks1 {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -581,7 +580,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width:1220px ) and (min-width:768px) {
+@media only screen and (max-width: 1220px) and (min-width: 768px) {
   .cards img {
     width: 327px;
   }
