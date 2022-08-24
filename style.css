@@ -17,6 +17,10 @@ button {
   color: #505f79;
 }
 
+form button {
+  margin-left: 110px;
+}
+
 a {
   color: #505f79;
 }
@@ -93,11 +97,20 @@ i {
   padding-right: 10px;
 }
 
+.sociallinks1 > * {
+  padding-right: 15px;
+}
+
 .sociallinks {
   display: flex;
   justify-content: center;
   margin-top: -110px;
   margin-left: -20px;
+}
+
+.sociallinks1 {
+  display: flex;
+  justify-content: center;
 }
 
 .toolbar {
@@ -300,4 +313,77 @@ i {
   font-size: 24px;
   line-height: 32px;
   color: #344563;
+}
+
+.contact {
+  background-image: url(Form/illustration-contact-form.svg);
+  background-position: 100% 67%;
+  background-repeat: no-repeat;
+  max-width: 375px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  height: 48px;
+}
+
+input,
+textarea {
+  font: sans-serif;
+  width: 327px;
+  margin-bottom: 24px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+textarea::placeholder {
+  font-size: 15px;
+  color: #000;
+}
+
+textarea {
+  height: 114px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.contact ul {
+  padding-left: 0;
+}
+
+.contact header {
+  width: 370px;
+  align-self: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailto {
+  text-align: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  padding-bottom: 300px;
 }
