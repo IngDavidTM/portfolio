@@ -4,6 +4,11 @@ body {
   align-items: center;
 }
 
+a {
+  color: #505f79;
+  text-decoration: none;
+}
+
 .toolbardesk a:hover {
   transition-duration: 1s;
   color: #172b4d;
@@ -23,6 +28,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.vector {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #28352f;
 }
 
 .vector:hover:enabled {
@@ -45,11 +57,6 @@ button {
 
 form button {
   margin-left: 110px;
-}
-
-a {
-  color: #505f79;
-  text-decoration: none;
 }
 
 button:hover:enabled {
@@ -76,13 +83,6 @@ i {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352f;
-}
-
-.vector {
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: #28352f;
 }
 
