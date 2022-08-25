@@ -4,6 +4,11 @@ body {
   align-items: center;
 }
 
+.toolbardesk a:hover {
+  transition-duration: 1s;
+  color: #172b4d;
+}
+
 .toolbardesk {
   display: none;
 }
@@ -169,12 +174,23 @@ img:hover {
   width: 40px;
 }
 
+.chevron:hover:enabled {
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+  background: none;
+}
+
 .social {
   display: flex;
   flex-direction: column;
 }
 
 .social a:hover {
+  color: #0cb653;
+  transition-duration: 1s;
+}
+
+.social1 a:hover {
   color: #0cb653;
   transition-duration: 1s;
 }
@@ -282,6 +298,13 @@ img:hover {
   line-height: 52px;
 }
 
+.headline:hover,
+.headblack:hover,
+.headblack1:hover {
+  transform: scale(1.03);
+  transition-duration: 1.5s;
+}
+
 .finaltext {
   font-family: sans-serif;
   font-style: normal;
@@ -307,6 +330,7 @@ img:hover {
 
 .cv:hover {
   background-color: #a2b4d354;
+  transition-duration: 1.5s;
 }
 
 .cv:active {
