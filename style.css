@@ -160,6 +160,11 @@ i {
   margin-bottom: 100px;
 }
 
+img:hover {
+  transform: scale(1.04);
+  transition-duration: 1.5s;
+}
+
 .chevron img {
   width: 40px;
 }
@@ -591,6 +596,13 @@ textarea {
   input,
   textarea {
     width: 668px;
+  }
+
+  input:hover,
+  textarea:hover {
+    border-color: green;
+    transform: scale(1.04);
+    transition-duration: 1.5s;
   }
 
   form button {
