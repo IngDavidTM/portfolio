@@ -4,6 +4,16 @@ body {
   align-items: center;
 }
 
+a {
+  color: #505f79;
+  text-decoration: none;
+}
+
+.toolbardesk a:hover {
+  transition-duration: 1s;
+  color: #172b4d;
+}
+
 .toolbardesk {
   display: none;
 }
@@ -20,6 +30,18 @@ body {
   justify-content: space-between;
 }
 
+.vector {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #28352f;
+}
+
+.vector:hover:enabled {
+  transform: rotate(90deg);
+  background-color: #fff;
+}
+
 .chevron {
   margin-top: 150px;
   max-width: fit-content;
@@ -30,15 +52,11 @@ button {
   background-color: transparent;
   border: none;
   color: #505f79;
+  transition-duration: 1s;
 }
 
 form button {
   margin-left: 110px;
-}
-
-a {
-  color: #505f79;
-  text-decoration: none;
 }
 
 button:hover:enabled {
@@ -68,13 +86,6 @@ i {
   color: #28352f;
 }
 
-.vector {
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #28352f;
-}
-
 .headline {
   font-family: sans-serif;
   font-style: normal;
@@ -84,6 +95,13 @@ i {
   display: flex;
   text-align: center;
   flex-direction: column;
+  animation: headAnimation 2s;
+}
+
+@keyframes headAnimation {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .black {
@@ -147,13 +165,34 @@ i {
   margin-bottom: 100px;
 }
 
+img:hover {
+  transform: scale(1.04);
+  transition-duration: 1.5s;
+}
+
 .chevron img {
   width: 40px;
+}
+
+.chevron:hover:enabled {
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+  background: none;
 }
 
 .social {
   display: flex;
   flex-direction: column;
+}
+
+.social a:hover {
+  color: #0cb653;
+  transition-duration: 1s;
+}
+
+.social1 a:hover {
+  color: #0cb653;
+  transition-duration: 1s;
 }
 
 .works {
@@ -259,6 +298,13 @@ i {
   line-height: 52px;
 }
 
+.headline:hover,
+.headblack:hover,
+.headblack1:hover {
+  transform: scale(1.03);
+  transition-duration: 1.5s;
+}
+
 .finaltext {
   font-family: sans-serif;
   font-style: normal;
@@ -284,6 +330,7 @@ i {
 
 .cv:hover {
   background-color: #a2b4d354;
+  transition-duration: 1.5s;
 }
 
 .cv:active {
@@ -573,6 +620,13 @@ textarea {
   input,
   textarea {
     width: 668px;
+  }
+
+  input:hover,
+  textarea:hover {
+    border-color: green;
+    transform: scale(1.04);
+    transition-duration: 1.5s;
   }
 
   form button {
