@@ -20,6 +20,11 @@ body {
   justify-content: space-between;
 }
 
+.vector:hover:enabled {
+  transform: rotate(90deg);
+  background-color: #fff;
+}
+
 .chevron {
   margin-top: 150px;
   max-width: fit-content;
@@ -30,6 +35,7 @@ button {
   background-color: transparent;
   border: none;
   color: #505f79;
+  transition-duration: 1s;
 }
 
 form button {
@@ -84,6 +90,13 @@ i {
   display: flex;
   text-align: center;
   flex-direction: column;
+  animation: headAnimation 2s;
+}
+
+@keyframes headAnimation {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .black {
@@ -154,6 +167,11 @@ i {
 .social {
   display: flex;
   flex-direction: column;
+}
+
+.social a:hover {
+  color: #0cb653;
+  transition-duration: 1s;
 }
 
 .works {
