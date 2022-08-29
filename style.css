@@ -469,6 +469,13 @@ textarea {
   padding-bottom: 300px;
 }
 
+input:hover,
+textarea:hover {
+  border-color: green;
+  transform: scale(1.04);
+  transition-duration: 1.5s;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-image: url(desktopBackground/Frame.svg), url(desktopBackground/illustration-2-contact-form-desktop.svg), url(desktopBackground/Frame-1.svg), url(desktopBackground/illustration-about-me-2-desktop.svg), url(desktopBackground/illustration-about-me-desktop.svg);
@@ -620,13 +627,6 @@ textarea {
   input,
   textarea {
     width: 668px;
-  }
-
-  input:hover,
-  textarea:hover {
-    border-color: green;
-    transform: scale(1.04);
-    transition-duration: 1.5s;
   }
 
   form button {
