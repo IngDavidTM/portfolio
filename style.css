@@ -18,6 +18,33 @@ a {
   display: none;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #172b4d;
+  min-height: 80vh;
+  min-width: 100%;
+  font-size: 32px;
+  padding-top: 108px;
+  padding-left: 28px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu > * {
+  padding-top: 40px;
+  color: #3a4a42;
+}
+
+.vectorX {
+  position: absolute;
+  color: #fff;
+  top: 3em;
+  left: 80%;
+  font-size: 32px;
+  color: #67798e;
+}
+
 .mainpage {
   background-image: url(Frame/Frame4.svg), url(Frame/Frame3.svg), url(Frame/Frame2.svg), url(Frame/Frame1.svg), url(Frame/Group35.svg), url(Frame/Group36.svg), url(Frame/Group37.svg), url(Frame/Group38.svg);
   background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
