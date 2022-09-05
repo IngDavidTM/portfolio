@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a12691952c.js" crossorigin="anonymous"></script>
+    
     <title>Portfolio David Tamayo</title>
 </head>
 <body>
+    
     <section class="mainpage">
-        <header class="menu">
+        <header class="menu" id="hide-menu">
             <a href="#wk">Portfolio</a>
             <a href="#mf">About</a>
             <a href="#ct">Contact</a>
-            <nav><button class="vectorX"><i class="fa-solid fa-xmark"></i></button></nav>
+            <nav><button class="vectorX" ><i class="fa-solid fa-xmark"></i></button></nav>
         </header>
         <header class="toolbar">
             <a class="welcome">Welcome</a>
-            <nav><button class="vector">☰</button></nav>
+            <nav><button class="vector" id="button" onclick="myFunction()">☰</button></nav>
         </header>
         <div class="headline">
             <h1 class="black">Hey there. I'm David</h1>
@@ -185,5 +187,6 @@
             </div>
         </footer>
     </section>
+    <script src="/main.js"></script>
 </body>
 </html>
