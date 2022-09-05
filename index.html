@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a12691952c.js" crossorigin="anonymous"></script>
+    
     <title>Portfolio David Tamayo</title>
 </head>
 <body>
     
     <section class="mainpage">
-        <header class="menu" id="hide-menu">
+        <header class="toolbardesk">
             <a href="#wk">Portfolio</a>
             <a href="#mf">About</a>
             <a href="#ct">Contact</a>
-            <nav><button class="vectorX" ><i class="fa-solid fa-xmark"></i></button></nav>
+        </header>
+        <header class="menu" id="hide-menu">
+            <a href="#wk" onclick="myFunction()">Portfolio</a>
+            <a href="#mf" onclick="myFunction()">About</a>
+            <a href="#ct" onclick="myFunction()">Contact</a>
+            <nav><button class="vectorX"><i class="fa-solid fa-xmark" onclick="myFunction()"></i></button></nav>
         </header>
         <header class="toolbar">
             <a class="welcome">Welcome</a>

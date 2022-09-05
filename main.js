@@ -1,9 +1,12 @@
-
-function myFunction() {
+function myFunction() { 
   var x = document.getElementById("hide-menu");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
+  var y = document.querySelector('.toolbar');
+  if (x.style.display === "flex") { 
+    x.style.display = "none"; 
+    y.style.display = "flex";
+  } else { 
+    x.style.display = "flex"; 
+    y.style.display = "none";
+  } 
 }
+ 
