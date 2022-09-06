@@ -11,7 +11,7 @@
 
 ## Live Demo (if available)
 
-https://ingdavidtm.github.io/portfolio/
+Not available
 
 ## Getting Started
 
