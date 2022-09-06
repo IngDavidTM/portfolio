@@ -349,6 +349,8 @@ img:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+  max-width: 80%;
+  align-self: center;
   text-align: center;
   color: #42526e;
 }
