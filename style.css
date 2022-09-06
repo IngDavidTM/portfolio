@@ -245,6 +245,98 @@ img:hover {
   flex-direction: column;
 }
 
+.mobile-popup {
+  display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  border: 20px solid #c1c7d0;;
+}
+
+.mobile-popup img {
+  padding: 1em;
+  max-width: 100%;
+  border-radius: 10%;
+}
+
+.close-popup {
+  position: absolute;
+  top: 3em;
+  left: 85%;
+}
+
+.mobile-popup h3 {
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.mobile-popup p {
+  color: #344563;
+  max-width: 80%;
+  align-self: center;
+  line-height: 27px;
+}
+
+.mobile-popup div {
+  max-width: 80%;
+  align-self: center;
+}
+
+.details-popup {
+ min-width: 80%;
+ align-items: flex-start;
+}
+
+.details-popup ul {
+  display: flex;
+  background-color: #fff;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.details-popup li {
+  margin-inline: 0.4em;
+}
+
+.details-popup a {
+  color: #3a4a42;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  width: max-content;
+  text-align: left;
+  padding: 0.5em;
+  height: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ebf0ee;
+  border-radius: 10%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  min-width: 80%;
+  gap: 1.2em;
+}
+
+.btn-popup {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.mobile-popup i {
+  color: #fff;
+}
+
+
 .cards img {
   width: 327px;
   height: 252px;
