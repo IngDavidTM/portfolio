@@ -4,6 +4,11 @@ body {
   align-items: center;
 }
 
+* {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 a {
   color: #505f79;
   text-decoration: none;
@@ -18,13 +23,45 @@ a {
   display: none;
 }
 
+.menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  min-height: 90vh;
+  min-width: 95%;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-left: 28px;
+  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
+  box-shadow: 0 140px 2px 1px rgba(158, 156, 156, 0.685);
+  z-index: 1;
+}
+
+.menu > * {
+  padding-top: 40px;
+  color: #3a4a42;
+  font-family: sans-serif;
+}
+
+.menu a:hover {
+  color: #11a55b;
+}
+
+.vectorX {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  font-size: 32px;
+  color: #67798e;
+}
+
 .mainpage {
   background-image: url(Frame/Frame4.svg), url(Frame/Frame3.svg), url(Frame/Frame2.svg), url(Frame/Frame1.svg), url(Frame/Group35.svg), url(Frame/Group36.svg), url(Frame/Group37.svg), url(Frame/Group38.svg);
-  background-position: -80% 50%, 100% 10%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
+  background-position: -80% 50%, 100% 20%, 40% 70%, 100% 100%, 50% 50%, 100% 50%, 0% 70%, 10% 30%;
   background-repeat: no-repeat;
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,6 +133,7 @@ i {
   text-align: center;
   flex-direction: column;
   animation: headAnimation 2s;
+  z-index: 0;
 }
 
 @keyframes headAnimation {
@@ -106,15 +144,21 @@ i {
 
 .black {
   color: #172b4d;
+  max-width: 90%;
+  align-self: center;
 }
 
 .green {
   color: #36b37e;
+  max-width: 90%;
+  align-self: center;
   margin-top: -40px;
   font-size: 45px;
 }
 
 .content {
+  max-width: 90%;
+  align-self: center;
   margin-bottom: 200px;
   padding-bottom: 40px;
   font-family: sans-serif;
@@ -196,9 +240,6 @@ img:hover {
 }
 
 .works {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -280,9 +321,6 @@ img:hover {
 }
 
 .myself {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -400,10 +438,7 @@ img:hover {
   background-image: url(Form/illustration-contact-form.svg);
   background-position: 100% 67%;
   background-repeat: no-repeat;
-  max-width: 375px;
   padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -489,6 +524,10 @@ textarea:hover {
     background-position: 40% 0%;
     background-repeat: no-repeat;
     max-width: max-content;
+  }
+
+  .menu {
+    display: none;
   }
 
   .toolbar {
@@ -658,6 +697,10 @@ textarea:hover {
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
   .cards img {
     width: 327px;
   }
