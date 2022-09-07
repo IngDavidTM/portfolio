@@ -229,6 +229,21 @@ img:hover {
   flex-direction: column;
 }
 
+.details-popup a {
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  width: max-content;
+  text-align: left;
+  padding: 0.5em;
+  height: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
 .social a:hover {
   color: #0cb653;
   transition-duration: 1s;
@@ -249,10 +264,10 @@ img:hover {
   display: none;
   position: fixed;
   min-width: 100%;
-  background-color:#c1c7d07c;
+  background-color: #c1c7d07c;
   height: 100vh;
   top: 0;
-  backdrop-filter:blur(10px);
+  backdrop-filter: blur(10px);
   justify-content: center;
 }
 
@@ -301,8 +316,8 @@ img:hover {
 }
 
 .details-popup {
- min-width: 90%;
- align-items: flex-start;
+  min-width: 90%;
+  align-items: flex-start;
 }
 
 .details-popup ul {
@@ -314,23 +329,6 @@ img:hover {
 
 .details-popup li {
   margin-inline: 0.4em;
-}
-
-.details-popup a {
-  color: #3a4a42;
-  color: #3a4a42;
-  background-color: #ebf0ee;
-  width: max-content;
-  text-align: left;
-  padding: 0.5em;
-  height: 10px;
-  font-size: 12px;
-  line-height: 16px;
-  background-color: #ebf0ee;
-  border-radius: 10%;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: none;
 }
 
 .btn-container {
@@ -681,7 +679,7 @@ textarea:hover {
   .content-head-desktop {
     min-width: 60%;
   }
-  
+
   .btn-container {
     display: none;
   }
@@ -705,7 +703,7 @@ textarea:hover {
   .close-popup i {
     color: #67798e;
   }
-  
+
   .mobile-popup img {
     margin-top: 3em;
     max-width: 100%;
