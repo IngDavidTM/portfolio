@@ -22,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
       description: 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       button1: 'https:taldr27.github.io',
       button2: 'https:github.com/IngDavidTM/portfolio',
+      buttonCardID: 'btnPopup1',
+      classC: 'cardinf c1',
     },
     {
       title: 'Keeping track of hundreds of components 2',
@@ -33,6 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       button1: 'https:taldr27.github.io',
       button2: 'https:github.com/IngDavidTM/portfolio',
+      buttonCardID: 'btnPopup2',
+      classC: 'cardinf c2',
     },
     {
       title: 'Keeping track of hundreds of components 3',
@@ -44,6 +48,8 @@ window.addEventListener('DOMContentLoaded', () => {
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       button1: 'https:taldr27.github.io',
       button2: 'https:github.com/IngDavidTM/portfolio',
+      buttonCardID: 'btnPopup3',
+      classC: 'cardinf c3',
     },
     {
       title: 'Keeping track of hundreds of components 4',
@@ -55,6 +61,8 @@ window.addEventListener('DOMContentLoaded', () => {
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       button1: 'https:taldr27.github.io',
       button2: 'https:github.com/IngDavidTM/portfolio',
+      buttonCardID: 'btnPopup4',
+      classC: 'cardinf c4',
     },
     {
       title: 'Keeping track of hundreds of components 5',
@@ -66,6 +74,8 @@ window.addEventListener('DOMContentLoaded', () => {
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       button1: 'https:taldr27.github.io',
       button2: 'https:github.com/IngDavidTM/portfolio',
+      buttonCardID: 'btnPopup5',
+      classC: 'cardinf c5',
     },
     {
       title: 'Keeping track of hundreds of components 6',
@@ -77,8 +87,75 @@ window.addEventListener('DOMContentLoaded', () => {
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       button1: 'https:taldr27.github.io',
       button2: 'https:github.com/IngDavidTM/portfolio',
+      buttonCardID: 'btnPopup6',
+      classC: 'cardinf c6',
     },
   ];
+  const bodyEl = document.getElementById('portfolio');
+  const aboveSec = document.getElementById('mainpage');
+  function mainSections() {
+    const section1 = document.createElement('section');
+    section1.id = 'mobile-popup-section';
+    section1.className = 'mobile-popup-section';
+    bodyEl.appendChild(section1);
+    aboveSec.insertAdjacentElement('afterend', section1);
+    const section2 = document.createElement('section');
+    section2.id = 'wk';
+    section2.className = 'works';
+    bodyEl.appendChild(section2);
+    aboveSec.insertAdjacentElement('afterend', section2);
+  }
+  window.onload = mainSections();
+  const worksContainer = document.getElementById('wk');
+  function worksHTML() {
+    const header = document.createElement('header');
+    worksContainer.appendChild(header);
+    const hH1 = document.createElement('h1');
+    hH1.innerHTML = 'My Recent works';
+    hH1.className = 'headblack';
+    header.appendChild(hH1);
+    const div = document.createElement('div');
+    div.className = 'cards';
+    worksContainer.appendChild(div);
+    for (let j = 0; j < 6; j += 1) {
+      const article1 = document.createElement('article');
+      article1.className = projects[j].classC;
+      div.appendChild(article1);
+      const img1 = document.createElement('img');
+      img1.src = projects[j].image;
+      img1.alt = 'Theme 2/Neutral 9';
+      article1.appendChild(img1);
+      const h21 = document.createElement('h2');
+      h21.className = 'cardtitle';
+      h21.innerHTML = 'Multi-Post Stories Gain+Glory';
+      article1.appendChild(h21);
+      const ul1 = document.createElement('ul');
+      ul1.className = 'categories';
+      article1.appendChild(ul1);
+      const li1 = document.createElement('li');
+      li1.className = 'ruby';
+      li1.innerHTML = projects[j].badge1;
+      ul1.appendChild(li1);
+      const li2 = document.createElement('li');
+      li2.className = 'css';
+      li2.innerHTML = projects[j].badge2;
+      ul1.appendChild(li2);
+      const li3 = document.createElement('li');
+      li3.className = 'js';
+      li3.innerHTML = projects[j].badge3;
+      ul1.appendChild(li3);
+      const li4 = document.createElement('li');
+      li4.className = 'html';
+      li4.innerHTML = projects[j].badge4;
+      ul1.appendChild(li4);
+      const buttonCard = document.createElement('button');
+      buttonCard.className = 'seeproject';
+      buttonCard.innerHTML = 'See Project';
+      buttonCard.id = projects[j].buttonCardID;
+      article1.appendChild(buttonCard);
+    }
+  }
+  window.onload = worksHTML();
   const mainContainer = document.getElementById('mobile-popup-section');
   function newHTML() {
     const main = document.createElement('div');
