@@ -14,6 +14,21 @@ a {
   text-decoration: none;
 }
 
+.details-popup a {
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  width: max-content;
+  text-align: left;
+  padding: 0.5em;
+  height: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
 .toolbardesk a:hover {
   transition-duration: 1s;
   color: #172b4d;
@@ -29,7 +44,7 @@ a {
   position: fixed;
   top: 0;
   background-color: #fff;
-  min-height: 90vh;
+  min-height: 90%;
   min-width: 95%;
   font-size: 32px;
   padding-top: 10px;
@@ -243,6 +258,106 @@ img:hover {
   min-height: auto;
   display: flex;
   flex-direction: column;
+}
+
+.mobile-popup-section {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  background-color: #c1c7d07c;
+  height: 100vh;
+  top: 0;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+}
+
+.mobile-popup {
+  padding-top: 0;
+  display: flex;
+  position: relative;
+  align-self: center;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 96%;
+  width: 90%;
+  max-height: 1000px;
+  max-width: 920px;
+  font-family: sans-serif;
+  border-radius: 1%;
+}
+
+.mobile-popup img {
+  margin: 0.5em;
+  max-width: 100%;
+  max-height: 616px;
+  border-radius: 2%;
+}
+
+.close-popup {
+  position: absolute;
+  top: 3em;
+  left: 85%;
+}
+
+.mobile-popup h3 {
+  font-size: 20px;
+  color: #172b4d;
+}
+
+.mobile-popup p {
+  color: #344563;
+  max-width: 95%;
+  font-size: 13px;
+  align-self: center;
+  line-height: 27px;
+}
+
+.mobile-popup div {
+  max-width: 95%;
+  align-self: center;
+}
+
+.mobile-popup .content-popup-desktop {
+  align-self: flex-start;
+  margin-left: 0.5em;
+}
+
+.details-popup {
+  min-width: 95%;
+  align-items: flex-start;
+}
+
+.details-popup ul {
+  display: flex;
+  background-color: #fff;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.details-popup li {
+  margin-inline: 0.4em;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  min-width: 90%;
+  gap: 1.2em;
+}
+
+.btn-popup {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.btn-container-desktop {
+  display: none;
+}
+
+.mobile-popup i {
+  color: #fff;
 }
 
 .cards img {
@@ -565,6 +680,57 @@ textarea:hover {
     margin-bottom: 500px;
   }
 
+  .content-popup-desktop {
+    display: flex;
+  }
+
+  .content-head-desktop {
+    min-width: 60%;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  .btn-container-desktop {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    min-width: 40%;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    left: 95%;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background-color: #ebecf0;
+  }
+
+  .close-popup i {
+    color: #67798e;
+  }
+
+  .mobile-popup img {
+    margin-top: 3em;
+    max-height: 400px;
+    border-radius: 2%;
+  }
+
+  .mobile-popup .content-popup-desktop {
+    align-self: center;
+    margin-left: 0.5em;
+  }
+
+  .mobile-popup h3 {
+    font-size: 1.5em;
+  }
+
+  .mobile-popup p {
+    font-size: 16px;
+  }
+
   .works {
     max-width: max-content;
     min-height: auto;
@@ -705,6 +871,17 @@ textarea:hover {
 
   .cards img {
     width: 327px;
+  }
+
+  .mobile-popup p {
+    font-size: 14px;
+  }
+
+  .mobile-popup img {
+    margin-top: 3em;
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 2%;
   }
 
   .c1 {
