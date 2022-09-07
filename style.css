@@ -14,6 +14,21 @@ a {
   text-decoration: none;
 }
 
+.details-popup a {
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  width: max-content;
+  text-align: left;
+  padding: 0.5em;
+  height: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
 .toolbardesk a:hover {
   transition-duration: 1s;
   color: #172b4d;
@@ -227,21 +242,6 @@ img:hover {
 .social {
   display: flex;
   flex-direction: column;
-}
-
-.details-popup a {
-  color: #3a4a42;
-  background-color: #ebf0ee;
-  width: max-content;
-  text-align: left;
-  padding: 0.5em;
-  height: 10px;
-  font-size: 12px;
-  line-height: 16px;
-  border-radius: 10%;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: none;
 }
 
 .social a:hover {
