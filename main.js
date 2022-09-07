@@ -80,8 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   ];
   const mainContainer = document.getElementById('mobile-popup-section');
-  function newHTML(workNumber) {
-    const i = workNumber;
+  function newHTML() {
     const main = document.createElement('div');
     main.id = 'mobile-popup';
     main.className = 'mobile-popup';
@@ -177,18 +176,20 @@ window.addEventListener('DOMContentLoaded', () => {
     const div3A2I = document.createElement('i');
     div3A2I.className = 'fa-brands fa-github';
     div3A2.appendChild(div2A2I);
-    img.src = projects[i].image;
-    divDivH3.innerHTML = projects[i].title;
-    li1A.innerHTML = projects[i].badge1;
-    li2A.innerHTML = projects[i].badge2;
-    li3A.innerHTML = projects[i].badge3;
-    li4A.innerHTML = projects[i].badge4;
-    mainP.innerHTML = projects[i].description;
-    divDiv2A1.href = projects[i].button1;
-    div3A1.href = projects[i].button1;
-    divDiv2A1.href = projects[i].button2;
-    div3A2.href = projects[i].button1;
-    liI.addEventListener('click', () => { mainContainer.style.display = 'none'; });
+  }
+  window.onload = newHTML();
+  function popInformation(number) {
+    const i = number;
+    document.getElementById('img-pop').src = projects[i].image;
+    document.getElementById('h3-popup').innerHTML = projects[i].title;
+    document.getElementById('badge1').innerHTML = projects[i].badge1;
+    document.getElementById('badge2').innerHTML = projects[i].badge2;
+    document.getElementById('badge3').innerHTML = projects[i].badge3;
+    document.getElementById('badge4').innerHTML = projects[i].badge4;
+    document.getElementById('p-pop').innerHTML = projects[i].description;
+    document.getElementById('btn-1').href = projects[i].button1;
+    document.getElementById('btn-2').href = projects[i].button2;
+    document.getElementById('x-but').addEventListener('click', () => { mainContainer.style.display = 'none'; });
     if (mainContainer.style.display === 'flex') {
       mainContainer.style.display = 'none';
     } else {
@@ -196,15 +197,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   const b1 = document.getElementById('btnPopup1');
-  b1.addEventListener('click', () => { newHTML(0); });
+  b1.addEventListener('click', () => { popInformation(0); });
   const b2 = document.getElementById('btnPopup2');
-  b2.addEventListener('click', () => { newHTML(1); });
+  b2.addEventListener('click', () => { popInformation(1); });
   const b3 = document.getElementById('btnPopup3');
-  b3.addEventListener('click', () => { newHTML(2); });
+  b3.addEventListener('click', () => { popInformation(2); });
   const b4 = document.getElementById('btnPopup4');
-  b4.addEventListener('click', () => { newHTML(3); });
+  b4.addEventListener('click', () => { popInformation(3); });
   const b5 = document.getElementById('btnPopup5');
-  b5.addEventListener('click', () => { newHTML(4); });
+  b5.addEventListener('click', () => { popInformation(4); });
   const b6 = document.getElementById('btnPopup6');
-  b6.addEventListener('click', () => { newHTML(5); });
+  b6.addEventListener('click', () => { popInformation(5); });
 });
