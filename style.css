@@ -628,6 +628,12 @@ textarea:hover {
   transition-duration: 1.5s;
 }
 
+.error {
+  color: red;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-image: url(desktopBackground/Frame.svg), url(desktopBackground/illustration-2-contact-form-desktop.svg), url(desktopBackground/Frame-1.svg), url(desktopBackground/illustration-about-me-2-desktop.svg), url(desktopBackground/illustration-about-me-desktop.svg);
