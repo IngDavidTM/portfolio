@@ -245,22 +245,36 @@ img:hover {
   flex-direction: column;
 }
 
-.mobile-popup {
+.mobile-popup-section {
   display: none;
-  top: 0;
-  left: 0;
   position: fixed;
+  min-width: 100%;
+  background-color:#c1c7d07c;
+  height: 100vh;
+  top: 0;
+  backdrop-filter:blur(10px);
+  justify-content: center;
+}
+
+.mobile-popup {
+  padding-top: 0;
+  display: flex;
+  position: relative;
+  align-self: center;
   background-color: #fff;
   flex-direction: column;
-  height: 100vh;
+  height: 96%;
+  width: 90%;
+  max-width: 920px;
   font-family: sans-serif;
-  border: 20px solid #c1c7d0;;
+  border-radius: 1%;
 }
 
 .mobile-popup img {
-  padding: 1em;
+  margin: 1em;
   max-width: 100%;
-  border-radius: 10%;
+  max-height: 616px;
+  border-radius: 2%;
 }
 
 .close-popup {
@@ -276,18 +290,18 @@ img:hover {
 
 .mobile-popup p {
   color: #344563;
-  max-width: 80%;
+  max-width: 90%;
   align-self: center;
   line-height: 27px;
 }
 
 .mobile-popup div {
-  max-width: 80%;
+  max-width: 90%;
   align-self: center;
 }
 
 .details-popup {
- min-width: 80%;
+ min-width: 90%;
  align-items: flex-start;
 }
 
@@ -323,7 +337,7 @@ img:hover {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  min-width: 80%;
+  min-width: 90%;
   gap: 1.2em;
 }
 
@@ -332,10 +346,13 @@ img:hover {
   flex-grow: 1;
 }
 
+.btn-container-desktop {
+  display: none;
+}
+
 .mobile-popup i {
   color: #fff;
 }
-
 
 .cards img {
   width: 327px;
@@ -655,6 +672,45 @@ textarea:hover {
   .social {
     margin-top: -90px;
     margin-bottom: 500px;
+  }
+
+  .content-popup-desktop {
+    display: flex;
+  }
+
+  .content-head-desktop {
+    min-width: 60%;
+  }
+  
+  .btn-container {
+    display: none;
+  }
+
+  .btn-container-desktop {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    min-width: 40%;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    left: 95%;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background-color: #ebecf0;
+  }
+
+  .close-popup i {
+    color: #67798e;
+  }
+  
+  .mobile-popup img {
+    margin-top: 3em;
+    max-width: 100%;
+    max-height: 616px;
+    border-radius: 2%;
   }
 
   .works {

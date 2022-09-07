@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a12691952c.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
     <title>Portfolio David Tamayo</title>
 </head>
 <body>
@@ -42,26 +43,36 @@
             <button class="chevron"><img src="images/Disabled.svg" alt="chevron-down"></button>
         </footer>
     </section>
-    <div class="mobile-popup" id="mobile-popup">
-        <img id="img-pop" src="images/d0d9d4_solid_color_background_icolorpalette.png" alt="">
-        <li class="close-popup"><i id="xbut" class="fa-solid fa-xmark"></i></li>
-        <div>
-            <h3 id="h3-popup">Keeping track of hundreds of components</h3>
+    <section class="mobile-popup-section" id="mobile-popup-section">
+        <div class="mobile-popup" id="mobile-popup">
+            <img id="img-pop" src="" alt="">
+            <li class="close-popup"><i id="xbut" class="fa-solid fa-xmark"></i></li>
+            <div class="content-popup-desktop">
+                <div class="content-head-desktop">
+                    <div>
+                        <h3 id="h3-popup"></h3>
+                    </div>
+                </div>
+                <div class="btn-container-desktop">
+                    <a class="button btn-popup-desktop seeproject" id="btn-1">See live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="button btn-popup-desktop seeproject" id="btn-2" href="">See source <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="details-popup">
+                <ul>
+                    <li><a id="badge1" href="#"></a></li>
+                    <li><a id="badge2" href="#"></a></li>
+                    <li><a id="badge3" href="#"></a></li>
+                    <li><a id="badge4" href="#"></a></li>
+                </ul>
+            </div>
+            <p id="p-pop"></p>
+            <div class="btn-container">
+                <a class="button btn-popup seeproject" id="btn-1">See live     <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="button btn-popup seeproject" id="btn-2" href="">See source     <i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
-        <div class="details-popup">
-            <ul>
-                <li><a id="badge1" href="#">Ruby on rails</a></li>
-                <li><a id="badge2" href="#">CSS</a></li>
-                <li><a id="badge3" href="#">JavaScript</a></li>
-                <li><a id="badge4" href="#">HTML</a></li>
-            </ul>
-        </div>
-        <p id="p-pop">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
-        <div class="btn-container">
-            <a class="button btn-popup seeproject" id="btn-1">See live     <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a class="button btn-popup seeproject" id="btn-2" href="">See source     <i class="fa-brands fa-github"></i></a>
-        </div>
-    </div>
+    </section>
     <section class="works" id="wk">
         <header>
             <h1 class="headblack">My Recent Works</h1>
@@ -211,6 +222,5 @@
             </div>
         </footer>
     </section>
-    <script src="/main.js"></script>
 </body>
 </html>
