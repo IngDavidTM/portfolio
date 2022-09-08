@@ -302,12 +302,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
   const formid = document.getElementById('form-mobile');
+  let objGet = {};
   const mainObj = {
     input: '',
     input2: '',
     input3: '',
   };
-  
   function stored() {
     const obj1 = document.getElementById('name-mobile').value;
     const obj2 = document.getElementById('email-mobile').value;
@@ -318,18 +318,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const mainObjString = JSON.stringify(mainObj);
     localStorage.setItem('main', mainObjString);
   }
-  
+  formid.addEventListener('input', stored);
   function setData() {
-    const objGet = JSON.parse(localStorage.getItem('main'));
+    objGet = JSON.parse(localStorage.getItem('main'));
     document.getElementById('name-mobile').value = objGet.input;
     document.getElementById('email-mobile').value = objGet.input2;
     document.getElementById('textarea-mobile').value = objGet.input3;
   }
-  
   window.onload = setData();
-  
-  formid.addEventListener('input', stored);
-
-
 });
-
