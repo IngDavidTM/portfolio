@@ -285,13 +285,14 @@ window.addEventListener('DOMContentLoaded', () => {
   b5.addEventListener('click', () => { popInformation(4); });
   const b6 = document.getElementById('btnPopup6');
   b6.addEventListener('click', () => { popInformation(5); });
+  
   const form = document.querySelector('form');
   const inputName = form.elements['user-name'];
   const error = document.getElementById('error');
   inputName.addEventListener('input', (e) => {
     if (inputName.value.length > 30) {
       e.preventDefault();
-      error.innerHTML = 'Please do not enter more tha 30 characters';
+      error.innerHTML = 'Please do not enter more than 30 characters';
     }
   });
   const inputEmail = form.elements['user-email'];

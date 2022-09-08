@@ -278,7 +278,6 @@ img:hover {
   align-self: center;
   background-color: #fff;
   flex-direction: column;
-  justify-content: space-between;
   height: 96%;
   width: 90%;
   max-height: 1000px;
@@ -292,6 +291,7 @@ img:hover {
   max-width: 100%;
   max-height: 616px;
   border-radius: 2%;
+  padding: 0.7em;
 }
 
 .close-popup {
@@ -301,7 +301,7 @@ img:hover {
 }
 
 .mobile-popup h3 {
-  font-size: 20px;
+  font-size: 25px;
   color: #172b4d;
 }
 
@@ -448,7 +448,7 @@ img:hover {
   text-align: center;
   font-weight: 700;
   font-size: 46px;
-  line-height: 52px;
+  line-height: 48px;
 }
 
 .headline:hover,
@@ -730,7 +730,7 @@ textarea:hover {
   }
 
   .mobile-popup h3 {
-    font-size: 1.5em;
+    font-size: 25px;
   }
 
   .mobile-popup p {
