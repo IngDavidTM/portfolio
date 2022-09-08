@@ -285,7 +285,6 @@ window.addEventListener('DOMContentLoaded', () => {
   b5.addEventListener('click', () => { popInformation(4); });
   const b6 = document.getElementById('btnPopup6');
   b6.addEventListener('click', () => { popInformation(5); });
-  
   const form = document.querySelector('form');
   const inputName = form.elements['user-name'];
   const error = document.getElementById('error');
