@@ -320,7 +320,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   formid.addEventListener('input', stored);
   function setData() {
-    objGet = JSON.parse(localStorage.getItem('main'));
+    objGet = JSON.stringify(localStorage.getItem('main'));
     document.getElementById('name-mobile').value = objGet.input;
     document.getElementById('email-mobile').value = objGet.input2;
     document.getElementById('textarea-mobile').value = objGet.input3;
