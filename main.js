@@ -287,7 +287,6 @@ window.addEventListener('DOMContentLoaded', () => {
   b6.addEventListener('click', () => { popInformation(5); });
   const form = document.querySelector('form');
   const inputName = form.elements['user-name'];
-  const inputEmail = form.elements['user-email'];
   const error = document.getElementById('error');
   inputName.addEventListener('input', (e) => {
     if (inputName.value.length > 30) {
@@ -295,35 +294,11 @@ window.addEventListener('DOMContentLoaded', () => {
       error.innerHTML = 'Please do not enter more than 30 characters';
     }
   });
+  const inputEmail = form.elements['user-email'];
   form.addEventListener('submit', (event) => {
     if (inputEmail.value.toLowerCase() !== inputEmail.value) {
       event.preventDefault();
       error.innerHTML = 'Set the email in lower case';
     }
   });
-  const formid = document.getElementById('form-mobile');
-  let objGet = {};
-  const mainObj = {
-    input: '',
-    input2: '',
-    input3: '',
-  };
-  function stored() {
-    const obj1 = document.getElementById('name-mobile').value;
-    const obj2 = document.getElementById('email-mobile').value;
-    const obj3 = document.getElementById('textarea-mobile').value;
-    mainObj.input = obj1;
-    mainObj.input2 = obj2;
-    mainObj.input3 = obj3;
-    const mainObjString = JSON.stringify(mainObj);
-    localStorage.setItem('main', mainObjString);
-  }
-  formid.addEventListener('input', stored);
-  function setData() {
-    objGet = JSON.parse(localStorage.getItem('main'));
-    document.getElementById('name-mobile').value = objGet.input;
-    document.getElementById('email-mobile').value = objGet.input2;
-    document.getElementById('textarea-mobile').value = objGet.input3;
-  }
-  window.onload = setData();
 });
